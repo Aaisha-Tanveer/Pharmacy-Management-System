@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Helpdesk - Pharmacy Management System</title>
+    <style>
+        body {
+            background-color: #F4F9FD;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+  #button {
+            background-color: #3498DB;
+            padding: 17px 25px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            text-decoration: none;
+            margin: 10px 20px;
+            display: inline-block;
+        }
+        #button:hover {
+            background-color: lightblue;
+            color: black;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+
+        header {
+            background-color: #2D4F6B;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header img {
+            width: 80px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        header #companyName {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        nav ul li {
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #3498DB;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #5DADE2;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2D4F6B;
+            margin-bottom: 20px;
+        }
+
+        .helpdesk-section {
+            margin: 20px auto;
+            max-width: 700px;
+            background: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .helpdesk-section h2 {
+            color: #2D4F6B;
+            margin-bottom: 15px;
+        }
+
+        .helpdesk-section p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .helpdesk-section .form-group {
+            margin-bottom: 15px;
+        }
+
+        .helpdesk-section label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2D4F6B;
+        }
+
+        .helpdesk-section input, .helpdesk-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .helpdesk-section button {
+            background-color: #3498DB;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .helpdesk-section button:hover {
+            background-color: #5DADE2;
+        }
+
+        footer {
+            background-color: #2D4F6B;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="D:\backup\223112s\PMS logo.jpg" alt="Pharmacy Management System Logo">
+        <span id="companyName">Pharmacy Management System</span>
+        <nav>
+            <ul>
+                <a id="button" href="D:\backup\223112s\Home.html">Home</a>
+                <a id="button" href="D:\backup\223112s\Aboutus.html">About us</a>
+                <a id="button" href="D:\backup\223112s\contact.html">Contact us</a>
+                <a id="button" href="D:\backup\223112s\login.html">Login</a>
+                <a id="button" href="D:\backup\223112s\register.html">Register</a>
+                <a id="button" href="D:\backup\223112s\HelpDesk.html">HelpDesk</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Helpdesk</h1>
+        <div class="helpdesk-section">
+            <h2>How can we help you?</h2>
+            <p>If you have any issues, questions, or concerns, please fill out the form below. Our team will get back to you as soon as possible.</p>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Describe your issue or question" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Pharmacy Management System. All Rights Reserved.
+    </footer>
+</body>
+</html>
